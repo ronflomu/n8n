@@ -33,15 +33,15 @@ services:
 
       # These automatically populate connection details 
       # for the Render Postgres database defined below
-      - key: DB_TYPE
-        value: postgresdb
       - key: DB_POSTGRESDB_DATABASE
         value: postgres
       - key: DB_POSTGRESDB_HOST
-        value: db.wonkxhnyzrmjxbdzjryf.supabase.co
+        value: aws-0-us-west-2.pooler.supabase.com
       - key: DB_POSTGRESDB_PORT
-        value: 5432
+        value: 6543
       - key: DB_POSTGRESDB_USER
-        value: postgres
+        value: postgres.wonkxhnyzrmjxbdzjryf
       - key: DB_POSTGRESDB_PASSWORD
         value: wRfAbxbeOBxfwSqt
+      - key: DB_POSTGRESDB_SSL_REJECT_UNAUTHORIZED
+        value: "false"
